@@ -1,8 +1,8 @@
 CC=clang
 CXX=clang++
 
-CFLAGS=-std=c11 -Wall -Wextra -Wpedantic -Werror -g
-CXXFLAGS=-std=c++17 -Wall -Wextra -Wpedantic -Werror -g
+CFLAGS=-std=c11 -Wall -Wextra -Wpedantic -Werror -Wno-c++20-extensions -g
+CXXFLAGS=-std=c++17 -Wall -Wextra -Wpedantic -Werror -Wno-c++20-extensions -g
 LDFLAGS=-g -lm
 
 .PHONY: all clean
